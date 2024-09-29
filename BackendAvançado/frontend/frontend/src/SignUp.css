@@ -1,0 +1,41 @@
+/* SignUp.css */
+.page-container {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Adiciona algum espaço nas bordas */
+}
+
+.back-button {
+    position: absolute; /* Para posicionar o botão no canto superior esquerdo */
+    top: 20px;
+    left: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: red;
+}
+
+.title {
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.user-input {
+    margin: 10px 0; /* Espaço entre os campos */
+    padding: 10px;
+    width: 300px; /* Largura dos campos de entrada */
+    border: 1px solid #ddd; /* Borda dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
+}

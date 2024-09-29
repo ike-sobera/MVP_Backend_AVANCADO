@@ -1,0 +1,112 @@
+/* Shows.css */
+.page-container {
+  position: relative;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-button {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: red;
+}
+
+.title {
+  font-size: 2rem; /* Tamanho maior para o título */
+  margin: 20px 0;
+  text-align: center; /* Centraliza o título */
+}
+
+.user-input {
+  margin: 20px 0;
+  padding: 10px;
+  width: 300px;
+}
+
+.shows-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.show-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px; /* Aumenta o padding */
+  margin: 20px;
+  width: 300px; /* Aumenta a largura */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza conteúdo no cartão */
+  cursor: pointer; /* Para indicar que o cartão é clicável */
+}
+
+.show-image {
+  width: 100%; /* Faz a imagem ocupar toda a largura do cartão */
+  height: auto; /* Mantém a proporção */
+  max-height: 300px; /* Limita a altura da imagem */
+  border-radius: 8px; /* Bordas arredondadas */
+  object-fit: cover; /* Mantém a proporção da imagem */
+  margin-bottom: 10px; /* Espaço abaixo da imagem */
+  transition: transform 0.3s, z-index 0.3s; /* Suaviza a animação */
+  cursor: pointer; /* Mostra que é clicável */
+}
+
+.show-image:hover {
+  transform: scale(1.05); /* Aumenta a imagem em 5% */
+  z-index: 10; /* Coloca a imagem acima dos outros elementos */
+}
+
+.ticket-quantity,
+.cep-input {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: red;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Escurece o fundo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  padding: 20px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
